@@ -1,0 +1,113 @@
+---
+// src/components/CaseStudy.astro
+---
+
+<section id="casos" class="py-20 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-base text-lanma-primary font-semibold tracking-wide uppercase">Resultados Reales</h2>
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-lanma-dark sm:text-4xl">
+        De la Dependencia a la Rentabilidad
+      </p>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+        Cómo ayudamos a un hotel independiente a recuperar el 40% de sus ingresos eliminando intermediarios.
+      </p>
+    </div>
+
+    <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+      
+      <div class="relative">
+        <h3 class="text-2xl font-bold text-lanma-dark tracking-tight sm:text-3xl">
+          El Desafío: La "Hemorragia" de las Comisiones
+        </h3>
+        <p class="mt-3 text-lg text-gray-500">
+          El hotel tenía ocupación, pero no ganancias. Las OTAs (Booking, Expedia) se llevaban hasta el <strong>30% de comisión</strong>, sumado a impuestos y promociones forzadas. Para competir, tenían que inflar sus precios, perdiendo clientes directos.
+        </p>
+
+        <h3 class="text-2xl font-bold text-lanma-dark tracking-tight sm:text-3xl mt-10">
+          La Solución Lanma Tech
+        </h3>
+        <p class="mt-3 text-lg text-gray-500">
+          No competimos con complejidad. Implementamos un <strong>Motor de Reservas Directo</strong> bajo la filosofía de "3 Clics". Sin intermediarios.
+        </p>
+
+        <dl class="mt-10 space-y-4">
+          
+          <div class="relative">
+            <dt>
+              <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-lanma-primary text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-lanma-dark">Cero Comisiones Variables</p>
+            </dt>
+            <dd class="ml-16 text-base text-gray-500">
+              Pasaron de perder el 30% por reserva a pagar una tarifa plana de mantenimiento fija.
+            </dd>
+          </div>
+
+          <div class="relative">
+            <dt>
+              <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-lanma-primary text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <p class="ml-16 text-lg leading-6 font-medium text-lanma-dark">Control Total de Tarifas</p>
+            </dt>
+            <dd class="ml-16 text-base text-gray-500">
+              El dueño recuperó la libertad de ajustar precios sin penalizaciones de terceros.
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+
+      <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+        
+        <div class="bg-gray-50 rounded-2xl shadow-xl p-8 border border-gray-100 max-w-md mx-auto">
+            <h4 class="text-center text-lg font-bold text-gray-800 mb-6">Impacto por cada $100,000 MXN vendidos</h4>
+            
+            <div class="mb-6">
+                <div class="flex justify-between text-sm mb-1">
+                    <span class="font-semibold text-gray-500">Antes (Con OTAs)</span>
+                    <span class="text-red-500 font-bold">Ganancia: $60,000</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden flex">
+                    <div class="bg-gray-400 h-4" style="width: 60%"></div> <div class="bg-red-500 h-4 animate-pulse" style="width: 40%"></div> </div>
+                <p class="text-xs text-red-500 mt-1 text-right">40% perdido en comisiones e impuestos</p>
+            </div>
+
+            <div class="flex justify-center -my-3 relative z-10">
+                <div class="bg-white p-1 rounded-full border border-gray-200 shadow-sm">
+                    <svg class="w-6 h-6 text-lanma-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="flex justify-between text-sm mb-1">
+                    <span class="font-semibold text-lanma-dark">Con Lanma Tech</span>
+                    <span class="text-green-600 font-bold">Ganancia: $96,500*</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden flex">
+                    <div class="bg-lanma-primary h-4" style="width: 96.5%"></div>
+                    <div class="bg-lanma-accent h-4" style="width: 3.5%"></div> </div>
+                <p class="text-xs text-green-600 mt-1 text-right">*Solo tarifa fija mensual de sistema</p>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 p-4 rounded-lg border border-blue-100">
+                <p class="text-center text-lanma-dark font-medium">
+                    "El sistema se pagó solo en la primera semana de uso."
+                </p>
+            </div>
+        </div>
+        
+        <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-16 -z-10 w-full h-full opacity-30 text-gray-200" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>

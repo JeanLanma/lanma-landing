@@ -1,0 +1,13 @@
+/* src/styles/global.css */
+@import "tailwindcss";
+
+@theme {
+  /* Definimos la paleta Lanma directamente aquí */
+  --color-lanma-dark: #0f172a;    /* Azul oscuro */
+  --color-lanma-primary: #2563eb; /* Azul medio */
+  --color-lanma-accent: #06b6d4;  /* Cian eléctrico */
+  --color-lanma-light: #f8fafc;   /* Gris casi blanco */
+
+  /* Definimos la fuente */
+  --font-sans: 'Inter', sans-serif;
+}
