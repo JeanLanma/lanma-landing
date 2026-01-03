@@ -25,7 +25,7 @@
                     <span class="text-3xl">✅</span>
                 </div>
                 <h3 class="text-2xl font-bold text-lanma-dark">¡Mensaje Recibido!</h3>
-                <p class="text-gray-500 mt-2">Gracias, {{ form.name }}. Analizaremos tu caso y te contactaremos en breve.</p>
+                <p class="text-gray-500 mt-2">Gracias, {{ form.name }}. Analizaremos su caso y le contactaremos en breve.</p>
                 <button @click="resetForm" class="mt-6 text-lanma-primary font-medium hover:underline">Enviar otro mensaje</button>
             </div>
 
@@ -35,14 +35,14 @@
                   <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
                   <input v-model="form.name" type="text" id="name" required 
                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lanma-primary focus:ring-lanma-primary sm:text-sm px-4 py-3 bg-gray-50 border"
-                         placeholder="Ej. Jean Desarrollador" />
+                         placeholder="Ej. Alex Desarrollador" />
                 </div>
 
                 <div>
                   <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
                   <input v-model="form.email" type="email" id="email" required 
                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lanma-primary focus:ring-lanma-primary sm:text-sm px-4 py-3 bg-gray-50 border"
-                         placeholder="jean@empresa.com" />
+                         placeholder="alex@empresa.com" />
                 </div>
 
                 <div>
