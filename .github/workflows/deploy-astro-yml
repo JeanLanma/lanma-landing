@@ -1,0 +1,42 @@
+name: Deploy Astro Lanmatech
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    # 1. Construimos el sitio en los servidores de GitHub
+    - name: Install & Build
+      run: |
+        npm install
+        npm run build
+
+    # 2. Enviamos la carpeta 'dist' al VPS usando Rsync
+    - name: Deploy to VPS
+      uses: easingthemes/ssh-deploy@v5.1.0
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: ${{ secrets.HOST }}
+        REMOTE_USER: ${{ secrets.USERNAME }}
+        
+        # --- AQUÍ ESTÁ EL CAMBIO IMPORTANTE ---
+        # Enviamos el contenido a la carpeta que Nginx está leyendo
+        TARGET: "/var/www/lanmatech-frontend/"
+        
+        # Origen: La carpeta dist que acabamos de generar en el paso anterior
+        SOURCE: "dist/"
+        
+        # Argumentos extra para borrar archivos viejos que ya no existan
+        ARGS: "-rlgoDvc -i --delete"
