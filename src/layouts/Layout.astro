@@ -1,6 +1,8 @@
 ---
 // src/layouts/Layout.astro
 import '../styles/global.css'; // <--- ¡ESTA ES LA LÍNEA MÁGICA QUE FALTABA!
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -29,6 +31,8 @@ const {
 		<title>{title}</title>
 	</head>
 	<body class="bg-lanma-light text-lanma-dark font-sans antialiased">
+		<Navbar />
         <slot />
+		<Footer />
 	</body>
 </html>
