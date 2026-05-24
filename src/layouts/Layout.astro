@@ -38,6 +38,13 @@ const {
 
 		gtag('config', 'G-4KXBV5BFCQ');
 		</script>
+		<script is:inline>
+		document.querySelectorAll('[data-gtag-event]').forEach(el => {
+			el.addEventListener('click', () => {
+			gtag('event', el.dataset.gtagEvent);
+			});
+		});
+		</script>
 	</head>
 	<body class="bg-lanma-light text-lanma-dark font-sans antialiased">
 		<Navbar />
